@@ -1,4 +1,8 @@
-# Python 00 — Primeros pasos con Python
+# Python 00 — Primeros pasos con Python / Python Fundamentals
+
+[Español](#español--primeros-pasos-con-python) · [English](#english--python-00)
+
+## Español · Primeros pasos con Python
 
 Ejercicios de iniciación a Python realizados durante mi formación en **42 Málaga Fundación Telefónica**.
 
@@ -55,16 +59,63 @@ Requieren **Python 3** y no se observan dependencias externas en los archivos de
 
 ---
 
-## English summary
+## English · Python 00
 
-**Python 00 — Python fundamentals**, a set of introductory exercises completed during my training at **42 Málaga Fundación Telefónica**.
+Introductory Python exercises completed as part of my studies at **42 Málaga Fundación Telefónica**.
 
-The garden-themed exercises cover function definitions, console input/output, integer conversion, basic arithmetic, conditionals, loops, recursion, simple `ValueError` handling and type annotations. See the table above for each source file.
+These short garden-themed exercises introduce core programming concepts, from input/output and arithmetic to conditionals, iteration, recursion, and type annotations.
 
-The files **define functions without calling them at module level**. To try an exercise, import and invoke its function, as shown in the examples above.
+### Exercises
 
-**Status:** introductory educational work, not a production application.
+| Folder | File | What it practices |
+|---|---|---|
+| `ex0` | [`ft_hello_garden.py`](ex0/ft_hello_garden.py) | Defining a function and printing a message with `print()`. |
+| `ex1` | [`ft_garden_name.py`](ex1/ft_garden_name.py) | Reading text with `input()` and displaying it. |
+| `ex2` | [`ft_plot_area.py`](ex2/ft_plot_area.py) | Converting input to integers and calculating the area of a garden plot. |
+| `ex3` | [`ft_harvest_total.py`](ex3/ft_harvest_total.py) | Adding harvest quantities entered for three days. |
+| `ex4` | [`ft_plant_age.py`](ex4/ft_plant_age.py) | Using `if/else` to check whether a plant is more than 60 days old. |
+| `ex5` | [`ft_water_reminder.py`](ex5/ft_water_reminder.py) | Using a condition to remind the user to water plants after more than two days. |
+| `ex6` | [`ft_count_harvest_iterative.py`](ex6/ft_count_harvest_iterative.py) | Counting days with a `for` loop and handling non-numeric input via `try/except`. |
+| `ex6` | [`ft_count_harvest_recursive.py`](ex6/ft_count_harvest_recursive.py) | Solving the same countdown recursively, with a base case and `ValueError` handling. |
+| `ex7` | [`ft_seed_inventory.py`](ex7/ft_seed_inventory.py) | Using parameters, type annotations and conditions to display inventory in packets, grams or area. |
+
+### How to run
+
+**Note:** these files define functions but do not call them automatically. Running a script directly with `python3 file.py` will produce no output until its function is invoked. From the repository root, import and call the relevant function:
+
+Example for `ex0`:
+
+```bash
+python3 -c "from ex0.ft_hello_garden import ft_hello_garden; ft_hello_garden()"
+```
+
+Example for `ex2` (prompts for length and width):
+
+```bash
+python3 -c "from ex2.ft_plot_area import ft_plot_area; ft_plot_area()"
+```
+
+Example for `ex7` (requires arguments):
+
+```bash
+python3 -c "from ex7.ft_seed_inventory import ft_seed_inventory; ft_seed_inventory('tomato', 12, 'packets')"
+```
+
+The exercises require **Python 3**. No external package dependencies are evident in the submitted files.
+
+### Learning outcomes
+
+- Writing functions, passing arguments and printing output.
+- Receiving user input, converting values and performing basic arithmetic.
+- Using conditionals to make simple decisions.
+- Comparing iteration and recursion to solve the same task.
+- Handling invalid numeric input in `ex6`.
+- Adding parameter and return type annotations in `ex7`.
+
+**Status:** early-stage educational exercises, not a complete application or production project. This repository documents a specific stage of my programming studies.
+
+---
 
 ## Autor / Author
 
-**Juan A. Pedraza** · [Perfil de GitHub](https://github.com/jpedraza42) · [Portfolio](https://jpedraza42.github.io/Jpedraza42/)
+**Juan A. Pedraza** · [GitHub](https://github.com/jpedraza42) · [Portfolio](https://jpedraza42.github.io/Jpedraza42/)
